@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:padding="10dp">
+
+    <EditText
+        android:textColor="@color/colorPrimaryDark"
+        android:hint="Dato a guardar"
+        android:id="@+id/nameEt"
+        android:layout_width="250dp"
+        android:layout_height="54dp"
+        android:height="1dp"/>
+
+    <ImageButton
+        android:background="@color/colorPrimary"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/saveIbtn"
+        android:layout_width="55dp"
+        android:layout_height="55dp" />
+
+</LinearLayout>

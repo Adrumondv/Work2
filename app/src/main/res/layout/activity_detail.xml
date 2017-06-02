@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alexanderdrumond.work2.DetailActivity"
+    android:padding="16dp">
+    
+    <EditText
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:id="@+id/descriptionEt"
+        android:layout_centerInParent="true"
+        android:hint="Ingresar descripción"/>
+
+</RelativeLayout>
