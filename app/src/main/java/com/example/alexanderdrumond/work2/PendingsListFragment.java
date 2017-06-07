@@ -40,7 +40,7 @@ public class PendingsListFragment extends Fragment implements PendingsClick {
         RecyclerView recyclerView = (RecyclerView) view;
         LinearLayoutManager linearLayoutManager= new LinearLayoutManager(getContext());
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(),2);
-        recyclerView.setLayoutManager(gridLayoutManager);
+        recyclerView.setLayoutManager(linearLayoutManager);
 
         recyclerView.setHasFixedSize(true);
 

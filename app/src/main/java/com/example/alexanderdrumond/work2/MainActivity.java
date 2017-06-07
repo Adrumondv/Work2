@@ -13,11 +13,11 @@ import android.widget.ImageButton;
 
 import com.example.alexanderdrumond.work2.models.Pending;
 
+import java.util.Date;
+
 public class MainActivity extends AppCompatActivity {
 
     private PendingsListFragment pendingsListFragment;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        final Date date = new Date();
 
         pendingsListFragment = (PendingsListFragment) getSupportFragmentManager().findFragmentById(R.id.pendingListFragment);
 
@@ -41,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 button.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        String name = editText.getText().toString();
+                        String name = ( date + " " + editText.getText( ).toString());
                         if (name.trim().length()>0){
                             Pending pending = new Pending();
                             pending.setName(name);
@@ -56,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
 
                 dialog.show();
             }
+
         });
     }
 }

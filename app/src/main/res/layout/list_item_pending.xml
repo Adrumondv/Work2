@@ -6,6 +6,7 @@
     android:paddingTop="8dp"
     android:paddingBottom="8dp"
     android:paddingRight="16dp"
+    android:gravity="center_vertical"
     android:background="@drawable/line">
 
     <CheckBox
@@ -17,7 +18,7 @@
         android:background="?attr/selectableItemBackground"
         android:id="@+id/pendingTv"
         android:layout_marginLeft="16dp"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"/>
+        />
 </LinearLayout>
